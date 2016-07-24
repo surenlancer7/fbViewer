@@ -1,7 +1,7 @@
 (function() {
     'use strict';
     
-var app = angular.module('common.directives.formBuilder', []);
+var app = angular.module('formBuilder', []);
 
 app.directive('dynamic', function ($compile) {
   return {

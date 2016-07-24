@@ -312,3 +312,12 @@ $ grunt dev
 # compile coffee script and minify
 $ grunt build
 ```
+
+##How to see
+
+# npm install
+# bower install surenlancer7/formGenerator
+# copy the address ex:- http://localhost:8000
+# paste it on browser
+# Build the form 
+# Tap the button "Viewer"

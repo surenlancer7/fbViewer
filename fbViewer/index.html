@@ -9,16 +9,15 @@
     <link type="text/css" rel="stylesheet" href="dist/angular-form-builder.css"/>
     <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
     <script type="text/javascript" src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
-<!--    <script type="text/javascript" src="//code.angularjs.org/1.2.20/angular.min.js"></script>-->
+    
     <script src="src/angular.js"></script>
     <script type="text/javascript" src="dist/angular-form-builder.js"></script>
     <script type="text/javascript" src="dist/angular-form-builder-components.js"></script>
     <script type="text/javascript" src="//kelp404.github.io/angular-validator/dist/angular-validator.min.js"></script>
     <script type="text/javascript" src="//kelp404.github.io/angular-validator/dist/angular-validator-rules.min.js"></script>
+    <script src="bower_components/formBuilder/formBuilder.js"></script>
     <script type="text/javascript" src="example/demo.js"></script>
     <script src="example/fb-controller.js"></script>
-    <script src="example/common/directives/fb-form-builder/fb-form-builder.js"></script>
-<!--    <script src="example/fb-viewer/fb-viewer.js"></script>-->
 </head>
 <body class="container" ng-controller="DemoController">
     <div class="row">
@@ -41,15 +40,14 @@
                 </div>
             </div>
         </div>
-        <div class = "row" ng-controller = "fbController">{{form}}
-            <button ng-click = "goToFormViewer(form)">Viewer</button>
-            <div dynamic = "html"></div>
-        </div>
         <div class="col-md-6">
             <div fb-components></div>
         </div>
     </div>
-    
+    <div class = "row" ng-controller = "fbController">
+        <button ng-click = "goToFormViewer(form)">Viewer</button>
+        <div dynamic = "html"></div>
+    </div>
 
     <div class="row">
         <h2>Form</h2>
