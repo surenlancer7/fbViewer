@@ -15,7 +15,8 @@
     <script type="text/javascript" src="dist/angular-form-builder-components.js"></script>
     <script type="text/javascript" src="//kelp404.github.io/angular-validator/dist/angular-validator.min.js"></script>
     <script type="text/javascript" src="//kelp404.github.io/angular-validator/dist/angular-validator-rules.min.js"></script>
-    <script src="bower_components/formBuilder/formBuilder.js"></script>
+<!--    <script src="bower_components/formBuilder/formBuilder.js"></script>-->
+    <script src="example/common/directives/fb-form-builder/fb-form-builder.js"></script>
     <script type="text/javascript" src="example/demo.js"></script>
     <script src="example/fb-controller.js"></script>
 </head>
@@ -54,11 +55,11 @@
         <hr/>
         <form class="form-horizontal">
             <div ng-model="input" fb-form="default" fb-default="defaultValue"></div>
-            <div class="form-group">
+            <!--<div class="form-group">
                 <div class="col-md-8 col-md-offset-4">
                     <input type="submit" ng-click="submit()" class="btn btn-default"/>
                 </div>
-            </div>
+            </div>-->
         </form>
         <div class="checkbox">
             <label><input type="checkbox" ng-model="isShowScope" ng-init="isShowScope=true" />
@@ -67,6 +68,8 @@
         </div>
         <pre ng-if="isShowScope">{{input}}</pre>
     </div>
+    
+    <fb-submit type = "testType" kind = "testKind"></fb-submit>
 
     <div class="row">
         <div class="col-md-12 footer"></div>

@@ -8,6 +8,10 @@ app.directive('dynamic', function ($compile) {
     restrict: 'A',
     controller: 'fbFormBuilderController',
     replace: true,
+    scope:{
+        kind = '@',
+        type = '@'
+    }
     link: function (scope, ele, attrs) {
       scope.$watch(attrs.dynamic, function(html) {
         var viewModel = html;
